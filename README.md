@@ -10,7 +10,7 @@ The main objective of this project is to utilize generative artificial intellige
 
 ![chatgpt style objective](media/readme/chatgpt%20style%20objective.jpg)
 
-## Origress
+## Progress
 
 - **Day 0: July 31, 2023:** 
 
