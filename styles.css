@@ -57,7 +57,7 @@ nav {
 
 .nav-links li {
     border: 2px solid peachpuff;
-    box-shadow: 5px 5px 15px rgba(245, 159, 226, 0.5);
+    box-shadow: 5px 5px 15px rgba(238, 120, 120, 0.678);
     transition: all 0.3s ease;
     padding: 10px;
     margin: 5px;   
@@ -169,9 +169,6 @@ footer {
     .nav-links i:hover {
         color: #ee82b8
     }
-
-
-
 
     main {
         height: 10vh
