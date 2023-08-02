@@ -2,7 +2,7 @@
 
 ![canva](media/readme/canva.jpg)
 
-This project is a portfolio website built with HTML, CSS, and vanilla JavaScript. It's designed to be fully responsive across various device screen sizes. The website has been deployed on GitHub pages and can be accessed at [https://sbogucki12.github.io/](https://sbogucki12.github.io/).
+This project is a portfolio website built with HTML, CSS, and vanilla JavaScript. It's designed to be fully responsive across various device screen sizes. The website has been deployed on GitHub pages and can be accessed at [https://sbogucki12.github.io/](https://sbogucki12.github.io/). The entire chat dialog that "developed" this site is here: [ChatGPT](https://chat.openai.com/share/9a9edc00-4256-4717-8ed7-a0c69faf8828)
 
 ## Objective
 
