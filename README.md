@@ -2,7 +2,7 @@
 
 ![canva](media/readme/canva.jpg)
 
-This project is a portfolio website built with HTML, CSS, and vanilla JavaScript. It's deployable to Azure App Service and designed to be fully responsive across various device screen sizes.
+This project is a portfolio website built with HTML, CSS, and vanilla JavaScript. It's designed to be fully responsive across various device screen sizes. The website has been deployed on GitHub pages and can be accessed at [https://sbogucki12.github.io/](https://sbogucki12.github.io/).
 
 ## Objective
 
@@ -14,11 +14,19 @@ The main objective of this project is to utilize generative artificial intellige
 
 - **Day 1: Aug. 1, 2023:** 
 
+On day 1, we made significant progress by adding a modal and an image carousel to the website. These features enhance the interactivity and visual appeal of the site.
+
 Dynamic layout for mobile and desktop: 
 
 ![Day 1 Aug 1 2023](media/readme/dynamic-layout.gif)
 
+Modal and Carousel:
+
+![Modal and Carousel](media/readme/carousel-prompt.jpg)
+
 - **Day 0: July 31, 2023:** 
+
+The project started with basic scaffolding and style application to the website.
 
 ![Day 0 July 31 2023](media/readme/day0july312023.jpg)
 
@@ -28,6 +36,10 @@ Dynamic layout for mobile and desktop:
 
 ![dynamically resize](media/readme/dynamically-resize.jpg)
 ![dynamic resize gif](media/readme/dynamic-resize-gif.gif)
+
+- **Modal and Carousel:** The website features a modal that houses an image carousel, adding an interactive visual element to the site.
+
+![Modal and Carousel](media/readme/update-carousel-prompt.jpg)
 
 - **Local development:** Utilize a quick python server to view website during development.
 
@@ -43,18 +55,18 @@ Dynamic layout for mobile and desktop:
 
 ![initial scaffold](media/readme/initial-scaffold.jpg)
 
-3. **ChatGPT Assistance:** ChatGPT was used to generate and refine the HTML, CSS, and JavaScript code for the website.
+3. **ChatGPT Assistance:** ChatGPT was used to generate and refine the HTML, CSS, and JavaScript code for the website, including the creation of a modal and an image carousel.
 
-(TODO: Add any other steps or details about your development process)
+![ChatGPT Assistance](media/readme/font-awesome.jpg)
 
 ## Deployment
 
-The website will be deployed on Azure App Service. (TODO: Add a link to live site, when available)
+The website has been deployed on GitHub pages and can be accessed [here](https://sbogucki12.github.io/).
 
 ## Future Enhancements
 
-    * Add a gallery
-    * Add a blog
+    * Add a blog section
+    * Incorporate more interactive elements
 
 ## Credits
 
