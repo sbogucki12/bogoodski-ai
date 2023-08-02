@@ -210,13 +210,17 @@ footer {
   }
   
   .modal-content {
-    background-color: #fefefe;
+    background-color: #000;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     height: 80%;
     overflow: auto;
+  }
+
+  .modal-content .carousel-button:hover {
+    color: #80e71f
   }
   
   .close {
@@ -228,7 +232,7 @@ footer {
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #ac3e8b;
     text-decoration: none;
     cursor: pointer;
   }
@@ -245,6 +249,9 @@ footer {
 .carousel-image {
     max-width: 100%;
     max-height: 100%;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 2px 25px rgba(245, 159, 226, 0.5);
 }
 
 .carousel-button {

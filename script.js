@@ -24,7 +24,6 @@ var images = ['media/images/11.png',
 'media/images/20220824_051249.jpg',
 'media/images/20220911_141645.jpg',
 'media/images/20220911_152431.jpg',
-'media/images/324944779_605363764732418_2580431472956264518_n.jpg',
 'media/images/IMG_20211212_085005_336.jpg',
 'media/images/IMG_20211212_085005_352.jpg',
 'media/images/IMG_20220319_094934_952.jpg',
@@ -53,7 +52,10 @@ var images = ['media/images/11.png',
 'media/images/Screenshot_20220624-233708_Bumble.jpg',
 'media/images/Screenshot_20220624-233727_Bumble.jpg',
 'media/images/Screenshot_20230319-110128.png',
-'media/images/stevejoshuatree.jpg'];
+'media/images/stevejoshuatree.jpg', 
+'media/images/IMG_20210517_163033_616.jpg',
+'media/images/IMG_20210518_155342_559.jpg',
+'media/images/IMG_20210809_080655_707.webp'];
 
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
