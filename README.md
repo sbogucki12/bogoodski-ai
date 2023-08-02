@@ -39,7 +39,8 @@ The project started with basic scaffolding and style application to the website.
 
 - **Modal and Carousel:** The website features a modal that houses an image carousel, adding an interactive visual element to the site.
 
-![Modal and Carousel](media/readme/update-carousel-prompt.jpg)
+![Modal and Carousel Prompt](media/readme/update-carousel-prompt.jpg)
+![Modal and Carousel](media/readme/modal-gif.gif)
 
 - **Local development:** Utilize a quick python server to view website during development.
 
