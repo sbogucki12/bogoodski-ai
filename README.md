@@ -2,7 +2,7 @@
 
 ![canva](media/readme/canva.jpg)
 
-This project is a portfolio website built with HTML, CSS, and vanilla JavaScript. It's designed to be fully responsive across various device screen sizes. The website has been deployed on GitHub pages and can be accessed at [https://sbogucki12.github.io/](https://sbogucki12.github.io/). The entire chat dialog that "developed" this site is here: [ChatGPT](https://chat.openai.com/share/9a9edc00-4256-4717-8ed7-a0c69faf8828)
+This project is a portfolio website built with HTML, CSS, and vanilla JavaScript. It's designed to be fully responsive across various device screen sizes. The website has been deployed on GitHub pages and can be accessed at [https://sbogucki12.github.io/](https://sbogucki12.github.io/). The entire chat dialog that "developed" this site is here: [ChatGPT](https://chat.openai.com/share/c6599edc-b2e6-4c26-a9fd-78e6c78d456c)
 
 ## Objective
 
@@ -11,6 +11,18 @@ The main objective of this project is to utilize generative artificial intellige
 ![chatgpt style objective](media/readme/chatgpt-style-objective.jpg)
 
 ## Progress
+
+- **Day 3: Aug. 3, 2023:**
+
+On day 3, we added a new section to the website that contains an embedded YouTube video. This video is centrally aligned on the screen for both desktop and mobile layouts and is styled with a fluorescent colored border and a contrasting neon drop shadow. The video's caption is subtly styled with a fluorescent neon color that is subdued with a lower opacity. The caption's text aligns with the right edge of the container, and on mobile devices, the font size is adjusted to fit on one row. 
+
+Video Embed Prompt:
+
+![Video Embed Prompt](media/readme/video-prompt.jpg)
+
+Video Thumbnail:
+
+![Video Thumbnail](media/readme/bogoodski-intro-vid-thumb.png)
 
 - **Day 2: Aug. 2, 2023:**
 
@@ -66,6 +78,11 @@ The project started with basic scaffolding and style application to the website.
 
 ![Favicon](media/readme/favicon-generator.jpg)
 
+- **Video Section:** The website features an embedded YouTube video in a separate section with unique stylings.
+
+![Video Embed Prompt](media/readme/video-prompt.jpg)
+![Video Thumbnail](media/readme/bogoodski-intro-vid-thumb.png)
+
 - **Local development:** Utilize a quick python server to view website during development.
 
 ![server](media/readme/server.jpg)
@@ -80,7 +97,7 @@ The project started with basic scaffolding and style application to the website.
 
 ![initial scaffold](media/readme/initial-scaffold.jpg)
 
-3. **ChatGPT Assistance:** ChatGPT was used to generate and refine the HTML, CSS, and JavaScript code for the website, including the creation of a modal, an image carousel, a resume feature, and a favicon.
+3. **ChatGPT Assistance:** ChatGPT was used to generate and refine the HTML, CSS, and JavaScript code for the website, including the creation of a modal, an image carousel, a resume feature, a favicon, and a video section.
 
 ![ChatGPT Assistance](media/readme/font-awesome.jpg)
 
@@ -92,7 +109,6 @@ The website has been deployed on GitHub pages and can be accessed [here](https:/
 
     * Add a blog section
     * Add a contact form (something more complex to challenge the AI with)
-    * Add an intro video
 
 ## Credits
 

@@ -120,3 +120,15 @@ document.querySelector('.carousel-button-next').addEventListener('click', functi
   currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;    
   carouselImage.src = images[currentIndex];
 });
+
+var resizeVideo = function() {
+    var video = document.querySelector('#video-section iframe');
+    var videoContainer = document.querySelector('.video-container');
+    var width = videoContainer.offsetWidth;
+    var height = width * (315/560);
+    video.style.width = width + 'px';
+    video.style.height = height + 'px';
+}
+
+window.addEventListener('resize', resizeVideo);
+document.addEventListener('DOMContentLoaded', resizeVideo);
