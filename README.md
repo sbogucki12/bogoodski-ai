@@ -12,6 +12,22 @@ The main objective of this project is to utilize generative artificial intellige
 
 ## Progress
 
+- **Day 2: Aug. 2, 2023:**
+
+On day 2, we added a resume feature and a favicon to the website. The resume feature consists of a modal that contains a carousel with different sections of the resume. This content was structured and styled by ChatGPT based on text provided from a LinkedIn profile. The favicon addition helps to identify the website in browser tabs.
+
+Favicon:
+
+![Favicon](media/readme/favicon-generator.jpg)
+
+Resume Prompt:
+
+![Resume Prompt](media/readme/resume-prompt.jpg)
+
+Resume Response:
+
+![Resume Response](media/readme/resume-response.jpg)
+
 - **Day 1: Aug. 1, 2023:** 
 
 On day 1, we made significant progress by adding a modal and an image carousel to the website. These features enhance the interactivity and visual appeal of the site.
@@ -42,6 +58,14 @@ The project started with basic scaffolding and style application to the website.
 ![Modal and Carousel Prompt](media/readme/update-carousel-prompt.jpg)
 ![Modal and Carousel](media/readme/modal-gif.gif)
 
+- **Resume Feature:** The resume feature provides detailed professional experience, education, and other qualifications in a modal with a carousel for easy navigation.
+
+![Resume Feature](media/readme/resume-response.jpg)
+
+- **Favicon:** A favicon has been added for better identification of the website in browser tabs.
+
+![Favicon](media/readme/favicon-generator.jpg)
+
 - **Local development:** Utilize a quick python server to view website during development.
 
 ![server](media/readme/server.jpg)
@@ -56,7 +80,7 @@ The project started with basic scaffolding and style application to the website.
 
 ![initial scaffold](media/readme/initial-scaffold.jpg)
 
-3. **ChatGPT Assistance:** ChatGPT was used to generate and refine the HTML, CSS, and JavaScript code for the website, including the creation of a modal and an image carousel.
+3. **ChatGPT Assistance:** ChatGPT was used to generate and refine the HTML, CSS, and JavaScript code for the website, including the creation of a modal, an image carousel, a resume feature, and a favicon.
 
 ![ChatGPT Assistance](media/readme/font-awesome.jpg)
 
@@ -67,8 +91,11 @@ The website has been deployed on GitHub pages and can be accessed [here](https:/
 ## Future Enhancements
 
     * Add a blog section
-    * Incorporate more interactive elements
+    * Add a contact form (something more complex to challenge the AI with)
+    * Add an intro video
 
 ## Credits
 
-This project was created by [BOGOODSKI](https://www.linkedin.com/in/sbogucki12/).
+This project was created by [BOGOODSKI](https://www.linkedin.com/in/sbogucki12/). The AI, ChatGPT, provided substantial assistance in generating the code for the website and even helped in writing this update to the readme.
+
+![ChatGPT Readme Prompt](media/readme/readme-prompt.jpg)

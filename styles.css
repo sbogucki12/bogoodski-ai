@@ -23,7 +23,6 @@ header {
     min-height: 70vh;     
 }
 
-
 .logo-container {
     display: flex;
     justify-content: center;
@@ -66,7 +65,8 @@ nav {
     justify-content: space-between; 
     align-items: center; 
     border-radius: 15px; 
-    width: auto;       
+    width: auto;      
+    cursor: pointer; 
 }
 
 .nav-links i {
@@ -114,6 +114,10 @@ footer {
     text-align: center;
     background-color: #333;
     color: #f0f0f0;
+}
+
+footer a {
+    color: #f7a987;
 }
 
 @media (min-width: 768px) {
@@ -166,7 +170,7 @@ footer {
         color: #ee82b8
     }
 
-    .nav-links i:hover {
+    .nav-links li:hover i {
         color: #ee82b8
     }
 
@@ -271,3 +275,52 @@ footer {
 .carousel-button-next {
     right: 10px;
 }
+
+/* Resume modal */
+#resume-modal .carousel-item {
+    display: none;
+}
+
+#resume-modal .carousel-item.active {
+    display: block;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.resume-content {
+    padding: 20px;
+    color: #f0f0f0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+ 
+.resume-content section {
+    margin-bottom: 30px;
+}
+
+.resume-content section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ee82b8;
+}
+
+.resume-content article {
+    margin-bottom: 20px;
+}
+
+.resume-content article h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #f7a987;
+}
+
+.resume-content article h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #f7a987;
+}
+

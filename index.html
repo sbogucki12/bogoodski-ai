@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,12 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/8db165ecfc.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     <header>
         <div class="logo-container">
@@ -15,48 +21,245 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <a href="https://www.linkedin.com/in/sbogucki12/" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-linkedin" ></i><span>LinkedIn</span></li></a>
-                <a href="https://github.com/sbogucki12" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-github"></i><span>GitHub</span></li></a>
-                <a href="https://twitter.com/devbogoodski" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-twitter"></i><span>&#x1D54F;</span></li></a>
-                <a href="https://www.dailyrun.net/" target="_blank" rel="noopener noreferrer"><li><i class="fa-solid fa-person-running"></i><span>Run Log</span></li></a>
-                <a href="https://www.instagram.com/devbogoodski/" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-instagram"></i><span>Instagram</span></li></a>
-                <a href="https://medium.com/@bogoodski" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-medium"></i><span>Medium</span></li></a>
-                <a href="https://yourgallery.com" target="_blank" rel="noopener noreferrer"><li><i class="fa-solid fa-images"></i><span>Gallery</span></li></a>                
+                <a href="https://www.linkedin.com/in/sbogucki12/" target="_blank" rel="noopener noreferrer">
+                    <li><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></li>
+                </a>
+                <a href="https://github.com/sbogucki12" target="_blank" rel="noopener noreferrer">
+                    <li><i class="fa-brands fa-github"></i><span>GitHub</span></li>
+                </a>
+                <div id="resume-button">
+                    <li><i class="fa-solid fa-briefcase"></i><span>Resume</span></li>
+                </div>
+                <a href="https://twitter.com/devbogoodski" target="_blank" rel="noopener noreferrer">
+                    <li><i class="fa-brands fa-twitter"></i><span>&#x1D54F;</span></li>
+                </a>
+                <a href="https://www.dailyrun.net/" target="_blank" rel="noopener noreferrer">
+                    <li><i class="fa-solid fa-person-running"></i><span>Run Log</span></li>
+                </a>
+                <a href="https://www.instagram.com/devbogoodski/" target="_blank" rel="noopener noreferrer">
+                    <li><i class="fa-brands fa-instagram"></i><span>Instagram</span></li>
+                </a>
+                <a href="https://medium.com/@bogoodski" target="_blank" rel="noopener noreferrer">
+                    <li><i class="fa-brands fa-medium"></i><span>Medium</span></li>
+                </a>
+                <div id="gallery-button">
+                    <li><i class="fa-solid fa-images"></i><span>Gallery</span></li></a>
             </ul>
         </nav>
     </header>
     <main>
         <section class="objective">
             <h1><i class="fa-regular fa-pen-to-square" style="color: #eeb3ebd2 "></i></h1>
-            <p>Deeply interested in enterprise data and analytics, my primary focus is merging the two to get the best out of both.</p>
+            <p>Deeply interested in enterprise data and analytics, my primary focus is merging the two to get the best
+                out of both.</p>
             <ul>
                 <li>
-                    <i>Foundation:</i> Data ontologies and digitalized business processes that form an organization's digital twin.
+                    <i>Foundation:</i> Data ontologies and digitalized business processes that form an organization's
+                    digital twin.
                 </li>
                 <li>
-                    <i>Integration:</i> Generative artificial intelligence, large language models, and machine learning to unlock deep, domain-specific insights and automation.
+                    <i>Integration:</i> Generative artificial intelligence, large language models, and machine learning
+                    to unlock deep, domain-specific insights and automation.
                 </li>
             </ul>
-                <p>Background in web development, transitioned into data science. Currently manage an analytics department. </p>
-                <ul>
-                    <li>Graduate - Cornell Python for Data Science certificate course.</li>
-                    <li>Current student - Cornell Machine Learning certificate course: Estimated completion date: Aug., 2023.</li>
-                </ul>            
+            <p>Background in web development, transitioned into data science. Currently manage an analytics department.
+            </p>
+            <ul>
+                <li>Graduate - Cornell Python for Data Science certificate course.</li>
+                <li>Current student - Cornell Machine Learning certificate course: Estimated completion date: Aug.,
+                    2023.</li>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>© 2023 Bogoodski.com</p>
+        <span>
+            © 2023 <a href="https://www.linkedin.com/in/sbogucki12/" target="_blank" rel="noopener noreferrer">BOGOODSKI</a> || <a href="https://github.com/sbogucki12/sbogucki12.github.io" target="_blank" rel="noopener noreferrer">Code</a>
+        </span>        
     </footer>
-    <div id="modal" class="modal">
+    <div id="gallery-modal" class="modal">
         <div class="modal-content">
-          <span class="close">&times;</span>
-          <div class="carousel">
-            <img class="carousel-image" src="" alt="Image">
+            <span class="close">&times;</span>
+            <div class="carousel">
+                <img class="carousel-image" src="" alt="Image">
             </div>
-        
-            <button class="carousel-button carousel-button-previous"><i class="fa-solid fa-circle-chevron-left"></i></button>
-            <button class="carousel-button carousel-button-next"><i class="fa-solid fa-circle-chevron-right"></i></button>
+
+            <button class="carousel-button carousel-button-previous"><i
+                    class="fa-solid fa-circle-chevron-left"></i></button>
+            <button class="carousel-button carousel-button-next"><i
+                    class="fa-solid fa-circle-chevron-right"></i></button>
         </div>
-      </div>
+    </div>
+    <div id="resume-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="resume-content">
+                <div class="carousel">
+                    <section class="carousel-item">
+                        <h1>Web Development</h1>
+                        <article>
+                            <h2>Yona-Brixtel, LLC</h2>
+                            <h3>Manager - SAFe Agile Cross-Functional Development Team</h3>
+                            <p>Managed implementation of federal regulatory compliance tracking application (currently in
+                                production), and
+                                external web portal (currently in development), in support of aviation safety oversight mission;
+                            </p>
+                            <p>Coordinated among federal, executive-level project management team and field office users;</p>
+                            <p>Interviewed and made hiring recommendations for system engineers, enterprise architects, and web
+                                developers;</p>
+                            <p>Guided team through transition from in-office to remote work due to COVID.</p>
+                            <h2>Software Engineer</h2>
+                            <p>Contributed to software development projects, proficient with the following technologies: C#,
+                                JavaScript,
+                                HTML/CSS, SQL Server, T-SQL, SSMS, Git, Visual Studio / VSCode, Postman, Azure.</p>
+                        </article>
+                        <article>
+                            <h2>Redwood Code Academy</h2>
+                            <p>Completed a 12-week, full-time, in-person web development bootcamp, focusing on C#, javaScript
+                                (Angular,
+                                node.js), and SQL.</p>
+                        </article>
+                    </section>
+    
+                    <section class="carousel-item">
+                        <h1>Management</h1>
+                        <article>
+                            <h2>Federal Aviation Administration</h2>
+                            <h3>Division Manager - Business Intelligence & Analytics Enablement</h3>
+                            <p>Division manager, responsible for two branches.</p>
+                            <h3>Manager</h3>
+                            <p>(Detail) Acting manager of the Executive Operations branch, leading a
+                                team of program
+                                managers, data scientists, and Business Intelligence professionals.</p>
+                            <h3>Manager</h3>
+                            <p>Supervised team of ~ 15 technical support employees in federal office.</p>
+                            <p>Managed office’s program of designee engineers – members of the public delegated aviation safety
+                                oversight
+                                responsibilities by the FAA.</p>
+                        </article>                       
+                        <article>
+                            <h2>Yona-Brixtel, LLC</h2>
+                            <h3>Manager - SAFe Agile Cross-Functional Development Team</h3>
+                            <p>Managed team consisting of SAFe Agile Product Owner, 6 full stack web developers, database
+                                administrator, and
+                                QA/QC tester.</p>
+                        </article>                        
+                        <article>
+                            <h2>United States Army</h2>
+                            <p>Promoted to Sergeant, team leader, in as short as time allowed by policy (24 months);</p>
+                            <p>Led a fire team in combat before age of 21;</p>
+                        </article>
+                    </section>
+    
+                    <section class="carousel-item">
+                        <h1>Data Science</h1>
+                        <article>
+                            <h2>Federal Aviation Administration</h2>
+                            <h3>Executive Support Staff</h3>
+                            <p>Architect solutions - enterprise data management, shared technical experience, and led system
+                                modernization and a
+                                challenging acquisition of an advanced data analytics platform.</p>
+                            <h3>Manager</h3>
+                            <p>Technical advisor to executive leadership of the Aircraft Certification Service, technical lead
+                                on systems
+                                modernization and acquisition project, and lead/member on various enterprise level data and
+                                advanced analytics
+                                teams.</p>
+                            <h3>Manager</h3>
+                            <p>Led office metrics program in support of ISO-9001 Quality Management System (QMS).</p>
+                        </article>                        
+                        <article>
+                            <h2>Cornell University</h2>
+                            <p>Completed Python for Data Science certificate program.</p>
+                            <p>Current student: Cornell Machine Learning certificate program, estimated completion: Aug, 2023.
+                            </p>
+                        </article>
+                        <article>
+                            <h2>Certificates</h2>
+                            <p>Data Management Fundamentals (DATAVERSITY)</p>
+                        </article>       
+                    </section>
+    
+                    <section class="carousel-item">
+                        <h1>Security and Compliance</h1>
+                        <article>
+                            <h2>Federal Aviation Administration</h2>
+                            <h3>Manager</h3>
+                            <p>Strong understanding of FAA AIR business processes, including continued operational safety (COS),
+                                type
+                                certification, production oversight, safety management systems (SMS), quality management systems
+                                (QMS), 14 CFR
+                                Part 193 Protection of Voluntary Data, compliance and enforcement, delegation, and integrated
+                                oversight
+                                philosophy.</p>
+                        </article>
+
+                        <article>
+                            <h2>Yona-Brixtel, LLC</h2>
+                            <p>Oversaw implementation of Okta for identity management of public users of a government system,
+                                including
+                                implementation of Open ID Connect (OIDC), OAuth 2.0, SAML integration, and Proof Key for Code
+                                Exchange (PKCE);
+                            </p>
+                            <p>Successfully guided Okta implementation through federal security assessments, leading the
+                                integration to achieve
+                                Authority To Operate (ATO) within a federal agency;</p>
+                        </article>     
+                    </section>
+    
+                    <section class="carousel-item">
+                        <h1>Communications</h1>
+                        <article>
+                            <h2>Federal Aviation Administration</h2>
+                            <h3>Communications Analyst (Web Content)</h3>
+                            <p>SharePoint site owner.</p>
+                            <p>Utilized C# to update public-facing and private federal intranet web content using in-house CMS.
+                            </p>
+                        </article>
+
+                        <article>
+                            <h2>United States Army</h2>
+                            <p>Maintained organization’s communication inventory in a combat environment, including safekeeping
+                                of cryptological
+                                data, and ensuring time-synced voice and data transmissions;</p>
+                        </article>      
+                    </section>
+    
+                    <section class="carousel-item">
+                        <h1>Education</h1>
+                        <article>
+                            <h2>University of South Florida</h2>
+                            <p>BA, International Studies / Religious Studies</p>
+                            <p>Graduated May, 2009 with GPA greater than 3.8 (of 4.0)</p>
+                            <p>Graduated Magna Cum Laude</p>
+                            <p>Completed senior thesis on Genocide Prevention</p>
+                            <p>Graduated from the University of South Florida's Honors College</p>
+                            <p>Dual Major: International Studies / Religious Studies</p>
+                        </article>
+                        <article>
+                            <h2>Cornell University</h2>
+                            <p>Certificate, Python for Data Science</p>
+                            <p>Certificate, Machine Learning (ETA: Aug., 2023)</p>
+                        </article>                        
+                        <article>
+                            <h2>Redwood Code Academy</h2>
+                            <p>Certificate, JavaScript and C#</p>
+                        </article>                        
+                        <article>
+                            <h2>Python for Data Science - Cornell University</h2>
+                            <h2>Data Management Fundamentals - DATAVERSITY</h2>
+                            <h2>Microsoft Access Visual Basic for Applications (VBA) - Skillsoft</h2>
+                        </article>
+                    </section>
+                </div>
+            </div>
+            
+            
+            <button class="carousel-button carousel-button-previous"><i
+                    class="fa-solid fa-circle-chevron-left"></i></button>
+            <button class="carousel-button carousel-button-next"><i
+                    class="fa-solid fa-circle-chevron-right"></i></button>
+        </div>
+    </div>
 </body>
+
 </html>

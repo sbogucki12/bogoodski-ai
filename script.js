@@ -1,25 +1,61 @@
-var modal = document.getElementById("modal");
+var galleryModal = document.getElementById('gallery-modal');
+var galleryLink = document.getElementById('gallery-button');
+var resumeModal = document.getElementById('resume-modal');
+var resumeLink = document.getElementById('resume-button');
+var carouselItems = document.querySelectorAll('#resume-modal .carousel-item');
+var currentItem = 0;
 
-var galleryLink = document.querySelector(".nav-links a[href='https://yourgallery.com']");
-
+// Gallery modal
 galleryLink.onclick = function(event) {
-  event.preventDefault();
-  modal.style.display = "block";
+    event.preventDefault();
+    galleryModal.style.display = "block";
 }
 
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
+// Resume modal
+resumeLink.onclick = function(event) {
+    event.preventDefault();
+    resumeModal.style.display = "block";
+    carouselItems[currentItem].classList.add('active');
 }
 
+// Close modals
+var span = document.getElementsByClassName("close");
+for (var i = 0; i < span.length; i++) {
+    span[i].onclick = function() {
+        galleryModal.style.display = "none";
+        resumeModal.style.display = "none";
+        carouselItems[currentItem].classList.remove('active');
+    }
+}
+
+// Close modals when clicking outside
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+    if (event.target == galleryModal) {
+        galleryModal.style.display = "none";
+    }
+    if (event.target == resumeModal) {
+        resumeModal.style.display = "none";
+        carouselItems[currentItem].classList.remove('active');
+    }
 }
 
+// Carousel for the resume modal
+var nextButton = document.querySelector('#resume-modal .carousel-button-next');
+var prevButton = document.querySelector('#resume-modal .carousel-button-previous');
 
+nextButton.addEventListener('click', function() {
+    carouselItems[currentItem].classList.remove('active');
+    currentItem = (currentItem + 1) % carouselItems.length;
+    carouselItems[currentItem].classList.add('active');
+});
+
+prevButton.addEventListener('click', function() {
+    carouselItems[currentItem].classList.remove('active');
+    currentItem = (currentItem - 1 + carouselItems.length) % carouselItems.length;
+    carouselItems[currentItem].classList.add('active');
+});
+
+// Image gallery
 var images = ['media/images/11.png',
 'media/images/20220824_051249.jpg',
 'media/images/20220911_141645.jpg',
@@ -58,43 +94,29 @@ var images = ['media/images/11.png',
 'media/images/IMG_20210809_080655_707.webp'];
 
 function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-        // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-
-    return array;
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+  }
+  return array;
 }
 
-// Shuffle the images
 images = shuffle(images);
 
 var currentIndex = 0;
 var carouselImage = document.querySelector('.carousel-image');
-
 carouselImage.src = images[currentIndex];
 
 document.querySelector('.carousel-button-previous').addEventListener('click', function() {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-    carouselImage.src = images[currentIndex];
+  currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+  carouselImage.src = images[currentIndex];
 });
 
 document.querySelector('.carousel-button-next').addEventListener('click', function() {
-    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;    
-    carouselImage.src = images[currentIndex];
+  currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;    
+  carouselImage.src = images[currentIndex];
 });
-
-
-
-
-
-
