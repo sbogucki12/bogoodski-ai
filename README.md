@@ -12,6 +12,14 @@ The main objective of this project is to utilize generative artificial intellige
 
 ## Progress
 
+ **Day 4: Aug. 4, 2023:**
+
+On day 4, we used AI capabilities to generate a new feature: an interactive section displaying images from an interview. Clicking on an image opens it in a full-screen modal, enhancing the user experience. The AI was instrumental in creating the JavaScript logic for the modal functionality, demonstrating the potential of AI in web development. (***Editor's Note: AI has been instrumental in every update. Lol***)
+
+Interview Images Prompt:
+
+![Interview Images Prompt](media/readme/interview-images-prompt.jpg)
+
 - **Day 3: Aug. 3, 2023:**
 
 On day 3, we added a new section to the website that contains an embedded YouTube video. This video is centrally aligned on the screen for both desktop and mobile layouts and is styled with a fluorescent colored border and a contrasting neon drop shadow. The video's caption is subtly styled with a fluorescent neon color that is subdued with a lower opacity. The caption's text aligns with the right edge of the container, and on mobile devices, the font size is adjusted to fit on one row. 
@@ -112,6 +120,6 @@ The website has been deployed on GitHub pages and can be accessed [here](https:/
 
 ## Credits
 
-This project was created by [BOGOODSKI](https://www.linkedin.com/in/sbogucki12/). The AI, ChatGPT, provided substantial assistance in generating the code for the website and even helped in writing this update to the readme.
+This project was created by [BOGOODSKI](https://www.linkedin.com/in/sbogucki12/). The AI, ChatGPT, played a crucial role in generating the code and even assisted in drafting and formatting this readme update.
 
 ![ChatGPT Readme Prompt](media/readme/readme-prompt.jpg)

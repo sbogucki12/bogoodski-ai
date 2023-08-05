@@ -132,3 +132,33 @@ var resizeVideo = function() {
 
 window.addEventListener('resize', resizeVideo);
 document.addEventListener('DOMContentLoaded', resizeVideo);
+
+
+// Add new modal for the interview images
+var interviewModal = document.getElementById('interview-modal');
+var interviewModalImage = document.getElementById('interview-modal-image');
+
+// Add event listeners for each image
+var interviewImages = document.querySelectorAll('.interview-image-wrapper img');
+interviewImages.forEach(function(img) {
+    img.onclick = function(event) {
+        event.preventDefault();
+        interviewModal.style.display = "block";
+        interviewModalImage.src = img.src;
+    }
+});
+
+// Add event listener for closing the modal
+var interviewSpan = document.getElementById("interview-close");
+interviewSpan.onclick = function() {
+    interviewModal.style.display = "none";
+    interviewModalImage.src = "";
+}
+
+// Add event listener for clicking outside the modal
+window.onclick = function(event) {
+    if (event.target == interviewModal) {
+        interviewModal.style.display = "none";
+        interviewModalImage.src = "";
+    }
+}
