@@ -19,6 +19,10 @@ h2 {
     font-size: 1.5em;
 }
 
+.hidden {
+    display: none;
+}
+
 .maui-image, .maui-video {
     max-width: 80%; /* Adjust to desired max width */
     max-height: 50vh; /* Adjust to desired max height */
