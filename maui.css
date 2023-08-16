@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.maui-container {
+    margin: 20px;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.maui-image, .maui-video {
+    max-width: 80%; /* Adjust to desired max width */
+    max-height: 50vh; /* Adjust to desired max height */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #FFD700;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 15px 0;
+}
+
+.maui-float-right {
+    float: right;
+    margin-left: 20px;  /* provides some spacing between the image and the text */
+    margin-bottom: 20px; /* provides some spacing below the image if the text is shorter */
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    .maui-image, .maui-video {
+        max-width: 90%;
+        max-height: 70vh;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .maui-image, .maui-video {
+        max-width: 70%;
+        max-height: 60vh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .maui-image, .maui-video {
+        max-width: 60%;
+        max-height: 50vh;
+    }
+}
