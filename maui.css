@@ -10,6 +10,7 @@ body {
     margin: 20px;
     line-height: 1.6;
     max-width: 1200px;
+    
     margin-left: auto;
     margin-right: auto;
 }
@@ -27,12 +28,14 @@ h2 {
     max-width: 80%; /* Adjust to desired max width */
     max-height: 50vh; /* Adjust to desired max height */
     height: auto;
-    display: block;
+    display:inline-block;
     margin-left: auto;
     margin-right: auto;
     border: 5px solid #FFD700;
+    border-radius: 25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin: 15px 0;
+    box-shadow: 5px 5px 15px rgba(34, 139, 34, 0.7);
 }
 
 .maui-float-right {
@@ -47,10 +50,82 @@ h2 {
     clear: both;
 }
 
+.maui-float-text-left {
+    align-self: flex-start; 
+    padding-top: 20vh; 
+}
+
+.maui-image-center-container {
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center;     /* Centers children vertically */
+    margin: 0;   
+}
+
+.maui-image-columns-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Defines 4 equal columns for desktop */
+    gap: 20px; /* Space between images */
+    width: 100%; /* Ensure the container takes the full width available */
+    justify-content: center; /* Center the grid items */
+}
+
+.maui-column-image {
+    max-width: 90%; /* Set a max-width to the images, so they don't take full width */
+    margin: 0 auto; /* Center the image within its grid cell */
+}
+
+.maui-float-image-left-container {
+    display: flex;            /* Enables Flexbox */
+    align-items: center;      
+}
+
+.maui-float-text-right {
+    text-align: justify;        /* Justifies the text to the right */
+    margin-left: 20px;        /* Space between the image and the text */
+    flex: 1;   
+}
+
+#maui-revealButton-container {  
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center;     /* Centers children vertically */
+    margin: 0;               /* Resets default margin */
+}
+
+
+
 @media screen and (max-width: 768px) {
+    .maui-container {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
     .maui-image, .maui-video {
         max-width: 90%;
         max-height: 70vh;
+    }
+
+    .maui-float-right {
+        margin-right: 20px; /* padding on the right side for mobile */
+        max-width: 60vw;
+    }
+
+    .maui-float-text-left {        
+        padding-top: 1vh; 
+    }
+
+    .maui-image-columns-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .maui-float-image-left {
+        max-width: 40%;  /* Limit the width of the image */
+        margin-right: 10px;  /* Space between the image and the text */
+    }
+
+    .maui-float-text-right {
+        
     }
 }
 
