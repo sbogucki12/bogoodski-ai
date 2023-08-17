@@ -86,6 +86,44 @@ h2 {
     flex: 1;   
 }
 
+.maui-image-table-container {
+    display: flex;
+    flex-wrap: wrap;  /* Allow the images to wrap to the next line */
+    justify-content: space-between;  /* Space the images evenly */
+}
+
+.maui-table-image {
+    width: 300px;  /* Slightly less than half to account for potential margins or padding */
+    margin-bottom: 2%;  /* Adds some space between rows */
+}
+
+.maui-image-pair-container {
+    display: flex;
+    flex-wrap: wrap;  /* This will allow the images to wrap to the next line on smaller screens */
+    justify-content: space-between;  /* This will provide space between the images */
+    padding: 20px;  /* Space from the images to the edge of the screen */
+}
+
+.detour-image-container {
+    display: flex;
+    flex-wrap: wrap;  /* This will allow the images to wrap to the next line on smaller screens */
+    justify-content: space-between;  /* This will provide space between the images */
+    padding: 20px;  /* Space from the images to the edge of the screen */
+}
+
+.detour-image-container .maui-image:first-child {
+    margin-right: 10px; /* Adds space to the right of the first image */
+}
+
+.detour-image-container .maui-image:last-child {
+    margin-left: 10px; /* Adds space to the left of the second image */
+}
+
+.detour-image {
+    width: calc(50% - 20px);  /* Each image will take up half of the container width minus half of the desired space between the images */
+    height: auto;  /* Maintain the image's aspect ratio */
+}
+
 #maui-revealButton-container {  
     display: flex;
     justify-content: center; /* Centers children horizontally */
@@ -106,9 +144,12 @@ h2 {
         max-height: 70vh;
     }
 
-    .maui-float-right {
-        margin-right: 20px; /* padding on the right side for mobile */
+    .maui-float-right {        
         max-width: 60vw;
+    }
+
+    .maui-float-right-mobile {
+        margin-top: 30vh;
     }
 
     .maui-float-text-left {        
@@ -124,8 +165,13 @@ h2 {
         margin-right: 10px;  /* Space between the image and the text */
     }
 
-    .maui-float-text-right {
-        
+    .maui-table-image {
+        width: 100%
+    }
+
+    .detour-image {
+        width: 100%;  /* Images will take up the full width of the container */
+        margin-bottom: 20px;  /* Adds some space between images when they stack */
     }
 }
 
