@@ -1,23 +1,36 @@
 body {
     background-color: black;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.neon-line {
+    height: 2px; /* Thickness of the line */
+    background-color: #6cfa6c; /* Dark neon green color */
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00; /* Neon glow effect */
+    width: 100%; /* Make it run widthwise across the screen */
 }
 
 .maui-container {
     margin: 20px;
     line-height: 1.6;
-    max-width: 1200px;
-    
+    max-width: 1200px;    
     margin-left: auto;
     margin-right: auto;
 }
 
 h2 {
     margin-top: 20px;
-    font-size: 1.5em;
+    font-size: 1.5em; 
+    color: #92da20;
+    -webkit-text-stroke-width: .05px;
+    -webkit-text-stroke-color: rgb(119, 72, 131);
+}
+
+a {
+    color: #92da20;  
 }
 
 .hidden {
@@ -31,7 +44,7 @@ h2 {
     display:inline-block;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid #FFD700;
+    border: 5px solid #da6630;
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin: 15px 0;
@@ -124,14 +137,98 @@ h2 {
     height: auto;  /* Maintain the image's aspect ratio */
 }
 
-#maui-revealButton-container {  
-    display: flex;
-    justify-content: center; /* Centers children horizontally */
-    align-items: center;     /* Centers children vertically */
-    margin: 0;               /* Resets default margin */
+#maui-revealButton-container {
+    text-align: center; /* Center the button horizontally */
+    padding: 20px; /* Add some space around the container */
 }
 
+#revealButton {
+    background-color: #008000; /* Lush tropical green background */
+    color: #FFFFFF; /* White text color */
+    font-size: 18px;
+    padding: 15px 30px; /* Vertical and horizontal padding for the button */
+    border: 2px solid #DDA0DD; /* Plum border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to hand on hover */
+    position: relative; /* To position the pseudo-elements (for neon effect) */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect and shadow */
+    overflow: hidden; /* Keep pseudo-elements (for neon effect) within the button boundaries */
+    outline: none; /* Remove focus outline which browsers apply by default */
+    box-shadow: 1px 1px 10px #99f345; /* Blood-orange drop shadow */
+}
 
+/* Neon effect using pseudo-elements */
+#revealButton::before, 
+#revealButton::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #00FF00; /* Neon green color */
+    border-radius: 8px;
+    opacity: 0.7;
+    z-index: -1;
+    box-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00;
+}
+
+/* Hover effect */
+#revealButton:hover {
+    background-color: #006400; /* Darker green on hover */
+    box-shadow: 2px 2px 12px #f879f8; /* Enhance the blood-orange drop shadow on hover */
+}
+
+/* Enhance the neon effect on hover */
+#revealButton:hover::before, 
+#revealButton:hover::after {
+    box-shadow: 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00, 0 0 70px #00FF00;
+}
+
+#homeButton {
+    background-color: #004d00; /* Subdued tropical green background */
+    color: #FFFFFF; /* White text color */
+    font-size: 18px;
+    padding: 15px 30px; /* Vertical and horizontal padding for the button */
+    border: 2px solid #8B008B; /* Darker Plum border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to hand on hover */
+    position: relative; /* To position the pseudo-elements (for subdued effect) */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect and shadow */
+    overflow: hidden; /* Keep pseudo-elements (for subdued effect) within the button boundaries */
+    outline: none; /* Remove focus outline which browsers apply by default */
+    box-shadow: 1px 1px 10px #b0401f; /* Subdued blood-orange drop shadow */
+    display: none; /* Will be displayed by JavaScript */
+    margin: 0 auto; /* Centers the button widthwise on the screen */
+}
+
+/* Subdued effect using pseudo-elements */
+#homeButton::before, 
+#homeButton::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #006400; /* Subdued green color */
+    border-radius: 8px;
+    opacity: 0.5;
+    z-index: -1;
+    box-shadow: 0 0 15px #006400, 0 0 20px #006400, 0 0 25px #006400;
+}
+
+/* Hover effect */
+#homeButton:hover {
+    background-color: #003300; /* Even darker green on hover */
+    box-shadow: 2px 2px 12px #993333; /* Enhance the subdued drop shadow on hover */
+}
+
+/* Enhance the subdued effect on hover */
+#homeButton:hover::before, 
+#homeButton:hover::after {
+    box-shadow: 0 0 20px #006400, 0 0 25px #006400, 0 0 30px #006400;
+}
 
 @media screen and (max-width: 768px) {
     .maui-container {
@@ -140,8 +237,8 @@ h2 {
     }
 
     .maui-image, .maui-video {
-        max-width: 90%;
-        max-height: 70vh;
+        
+        
     }
 
     .maui-float-right {        
@@ -149,7 +246,7 @@ h2 {
     }
 
     .maui-float-right-mobile {
-        margin-top: 30vh;
+        margin-top: 15vh;
     }
 
     .maui-float-text-left {        
@@ -177,14 +274,14 @@ h2 {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .maui-image, .maui-video {
-        max-width: 70%;
-        max-height: 60vh;
+        
+        
     }
 }
 
 @media screen and (min-width: 1025px) {
     .maui-image, .maui-video {
-        max-width: 60%;
-        max-height: 50vh;
+        
+        
     }
 }
