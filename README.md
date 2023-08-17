@@ -12,6 +12,10 @@ The main objective of this project is to utilize generative artificial intellige
 
 ## Progress
 
+**Day 5: Aug. 16, 2023:**
+
+Just added my Maui story.  I really put my heart into telling this exactly as I observed it.  [Please check it out.](https://bogoodski.com/maui.html)
+
  **Day 4: Aug. 4, 2023:**
 
 On day 4, we used AI capabilities to generate a new feature: an interactive section displaying images from an interview. Clicking on an image opens it in a full-screen modal, enhancing the user experience. The AI was instrumental in creating the JavaScript logic for the modal functionality, demonstrating the potential of AI in web development. (***Editor's Note: AI has been instrumental in every update. Lol***)

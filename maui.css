@@ -13,6 +13,12 @@ body {
     width: 100%; /* Make it run widthwise across the screen */
 }
 
+.div-line {
+    height: 2px; /* Thickness of the line */
+    background-color: #f5973e; /* Dark neon green color */
+    margin: 10%;
+}
+
 .maui-container {
     margin: 20px;
     line-height: 1.6;
@@ -246,7 +252,7 @@ a {
     }
 
     .maui-float-right-mobile {
-        margin-top: 15vh;
+        margin-top: 5vh;
     }
 
     .maui-float-text-left {        
