@@ -12,6 +12,12 @@ The main objective of this project is to utilize generative artificial intellige
 
 ## Progress
 
+**Day 6: Sept. 26, 2023:**
+
+Added a "run" section to the home page with a futuristic neon theme. The section showcases a love for running, along with an image from my run log, and provides links to a run log and a Strava profile. The entire code for this update was generated with the assistance of ChatGPT.
+
+![Run Update](media/readme/run-update.jpg)
+
 **Day 5: Aug. 16, 2023:**
 
 Just added my Maui story.  I really put my heart into telling this exactly as I observed it.  [Please check it out.](https://bogoodski.com/maui.html)

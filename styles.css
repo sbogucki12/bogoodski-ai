@@ -292,6 +292,65 @@ footer a {
     }
 }
 
+/* Running Section */
+#running {
+    background: linear-gradient(to bottom, black, gray);
+    padding: 20px;
+    text-align: center;
+    color: #00FF00; /* Neon Green */
+    margin-top: 12px;
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+}
+
+
+
+.running-stats {
+    font-size: 10vh; /* Making it bigger like a header */
+    margin-bottom: 20px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-style: italic;
+    color: goldenrod;
+    text-shadow: 0 0 10px #FF4500, 0 0 20px #FF4500, 0 0 30px #FF4500; /* Neon orange shadow */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(119, 72, 131);
+}
+
+.running-image-container {
+    display: inline-block;
+    max-width: 80vw; /* Set maximum width to 80% of the viewport width */
+    margin: 0 auto;  /* Center the image container */
+}
+
+.running-image {
+    border: 1px solid #00FF00; /* Neon Green */
+    border-radius: 10px;    
+    max-width: 100%;
+    margin-bottom: 20px;
+    width: 100%; /* Set image width to 100% of its container */
+    height: auto; /* Keep the aspect ratio */
+    max-height: 70vh; /* Set maximum height to 70% of the viewport height */
+}
+
+.running-links a {
+    color: #00FF00; /* Neon Green */
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-top: 20px; /* Add some space between the image and the links */
+}
+
+.running-links a:hover {
+    color: #FFFFFF; /* Changing color to white on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .running-image {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
 .modal {
     display: none; 
     position: fixed; 
