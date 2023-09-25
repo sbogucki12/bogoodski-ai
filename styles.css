@@ -260,6 +260,70 @@ main {
     }
 }
 
+/* "websites" section styles */
+#websites {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.websites-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2%;  /* spacing between the images */
+    max-width: 100%;  
+    padding: 10px; /* padding from the edges of the viewport */
+}
+
+.websites-container a {
+    width: 24%; /* Further adjusted width to make images smaller on desktop */
+    display: flex;
+    justify-content: center;
+}
+
+.websites-container a img {
+    width: 85%;  /* Further adjusted width to make images smaller on desktop */
+    border: 3px solid #FF4500;  /* neon tropical orange border */
+    border-radius: 8px;  /* rounded corners */
+    box-shadow: 0 5px 10px #008000;  /* tropical green drop shadow below the bottom border */
+    transition: transform 0.3s ease;  /* smooth hover effect */
+    margin: 15px; /* increased space between the images */
+}
+
+.websites-container a:hover img {
+    transform: scale(1.05);  /* slightly enlarge the image on hover */
+}
+
+.websites-caption {
+    margin-top: 20px;
+    font-size: 2.75rem;  /* caption size */
+    color: rgb(198, 115, 219);
+    font-family: 'Dosis', sans-serif;
+    font-style: italic;
+    text-shadow: -2px 0px 10px rgb(240, 162, 7);
+    padding-bottom: 2vh;
+}
+
+#globe-icon {
+    color: aquamarine;
+    text-shadow: 0px 2px 1px rgb(198, 115, 219);
+}
+
+@media screen and (max-width: 768px) {
+    .websites-container a {
+        width: 46%;  /* Adjusted width for mobile */
+    }
+
+    .websites-caption {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        font-size: 1.5rem;
+    }
+}
+
+
 footer {
     padding: 50px 10%;
     text-align: center;
