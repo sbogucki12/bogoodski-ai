@@ -91,7 +91,8 @@ var images = ['media/images/11.png',
 'media/images/stevejoshuatree.jpg', 
 'media/images/IMG_20210517_163033_616.jpg',
 'media/images/IMG_20210518_155342_559.jpg',
-'media/images/IMG_20210809_080655_707.webp'];
+'media/images/IMG_20210809_080655_707.webp', 
+'media/images/steve_roux.jpg'];
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
