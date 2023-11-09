@@ -95,7 +95,7 @@ var images = ['media/images/11.png',
 'media/images/steve_roux.jpg', 
 'media/images/IMG_5042.jpg',
 'media/images/IMG_20231015_161857_961.jpg',
-'media/images/IIMG_20231015_161859_539.jpg',
+'media/images/IMG_20231015_161859_539.jpg',
 'media/images/IMG_20231019_084344_012.jpg',
 'media/images/PXL_20231007_051519945.jpg']
 
